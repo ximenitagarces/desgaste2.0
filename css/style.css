@@ -193,3 +193,42 @@ body.testimonio footer {
   font-size: 0.9rem;
   margin-top: 0;
 }
+
+/* ESTILOS PARA LAS IMÁGENES DEL HOME - AGREGAR AL FINAL */
+.galeria .card .imagen {
+  width: 100%;
+  height: 150px;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.galeria .card .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.galeria .card:hover .imagen {
+  border: 2px solid #2196f3;
+}
+
+.galeria .card:hover .imagen img {
+  transform: scale(1.05);
+}
+
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.galeria .card {
+  width: 200px;
+  margin: 10px;
+  text-align: left;
+}
