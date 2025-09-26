@@ -3,6 +3,7 @@
   --color-text: #ffffff;
   --color-bg: #2e4351;
 }
+
 /* Estilos generales */
 body {
     background-color: black;
@@ -51,8 +52,6 @@ body {
     margin: 10px 0;
   }
 
-  
-  
   /* Título */
   .titulo {
     text-align: right;
@@ -98,146 +97,99 @@ body {
     padding: 0;
     list-style: none;
   }
-  
- 
-  <!DOCTYPE html>
-  <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manifiesto</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body class="manifiesto">
-  
-    <nav>
-      <ul>
-        <li><a href="index.html">home</a></li>
-        <li><a href="geolocalizador.html">geolocalizador</a></li>
-        <li><a href="testimonios.html">testimonios</a></li>
-        <li><a href="imagenes.html">imágenes</a></li>
-        <li><a href="manifiesto.html">manifiesto</a></li>
-      </ul>
-    </nav>
-  
-    <hr>
-  
-    <h1 class="titulo">desgaste</h1>
-  
-    <div class="contenido">
-      <p>Nos movemos.</p>
-  
-      <p>
-        Cada día millones de cuerpos recorren la ciudad.<br>
-        Cuerpos que esperan, que corren, que se sostienen en tubos,<br>
-        que se desgastan en asientos duros y en banquetas rotas.
-      </p>
-  
-      <p>
-        La movilidad no es neutra: cobra un precio.<br>
-        Se paga en tiempo, en cansancio, en salud, en emociones.<br>
-        Se paga con zapatos rotos, mochilas pesadas y piel marcada por el sol y el hacinamiento.
-      </p>
-  
-      <p class="cita">
-        Este proyecto existe para nombrar y mapear ese desgaste.<br>
-        Para reconocer que los trayectos son también cicatrices urbanas, huellas en el cuerpo y en la materia.<br>
-        Para recordar que invertir en la periferia es invertir en la vida digna, en el tiempo propio, en el derecho al ocio y al cuidado.<br>
-        No somos cifras en el conteo de usuarios del transporte.<br>
-        Somos personas, historias, memorias en movimiento.<br>
-        Este archivo es nuestra manera de visibilizar, testimoniar y resistir al desgaste de la ciudad.
-      </p>
-    </div>
-  
-    <footer>
-      ximena garcés · valentina rodríguez
-      <span>2025</span>
-    </footer>
-  
-  </body>
-  </html>
 
-  /* --- Estilos generales ya existentes --- */
+/* --- ESTILOS PARA TESTIMONIOS (AGREGAR AQUÍ) --- */
 
-  <!DOCTYPE html>
-  <html lang="es">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testimonio</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body class="testimonio">
-body {
- background-color: black;
+body.testimonio {
+  background-color: black;
   color: white;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-nav ul {
+body.testimonio nav ul {
   display: flex;
   gap: 15px;
   list-style: none;
   padding: 10px;
 }
 
-nav a {
+body.testimonio nav a {
   text-decoration: none;
   color: white;
   font-size: 14px;
 }
 
-hr {
+body.testimonio hr {
   border: none;
   border-top: 1px solid white;
   margin: 10px 0;
 }
 
-footer {
+body.testimonio footer {
   display: flex;
   justify-content: space-between;
-  font-size: 12px;
-  padding: 20px;
+  font-size: 14px;
+  padding: 40px;
   border-top: 1px solid white;
 }
 
-/* --- Página testimonios --- */
-
-}
-
-body.testimonios .titulo-italic {
+/* Título de testimonios */
+.titulo-italic {
   font-size: 2.5rem;
   font-style: italic;
   text-align: right;
   margin: 30px 40px;
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 300;
 }
 
+/* Grid de testimonios */
 .testimonios-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
   padding: 40px;
 }
 
-.card {
+/* Tarjetas de testimonio */
+.testimonios-grid .card {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 1.5rem;
   text-align: left;
-}
-
-.card h2 {
-  font-size: 1rem;
-  margin: 10px 0 5px;
-}
-
-.card p {
-  font-size: 0.9rem;
-  margin: 2px 0;
+  margin: 0;
+  width: auto;
 }
 
 .foto {
   width: 100%;
-  height: 150px;
-  background-color: white; /* Aquí irán las fotos */
-} </body>
-</html>
+  height: 200px;
+  background-color: #333;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonios-grid .card h2 {
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.testimonios-grid .card p {
+  font-family: "neue-haas-unica", sans-serif;
+  font-weight: 400;
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
