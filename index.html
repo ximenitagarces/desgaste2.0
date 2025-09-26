@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonios</title>
+    <title>Home - Desgaste</title>
     <link rel="stylesheet" href="https://use.typekit.net/dyt1bon.css">
     <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="./favicon/favicon2.svg" />
     <link rel="shortcut icon" href="./favicon/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
     <link rel="manifest" href="./favicon/site.webmanifest" />
+    
     <!-- Metadatos del sitio y página -->
-    <meta name="title" content="Desgaste">
+    <meta name="title" content="Desgaste - Home">
     <meta name="description" content="Paralelismo de la erosión física y material">
     <meta name="image" content="https://ximenitagarces.github.io/desgaste2.0/img/movilidad-cdmx-og.png">
     <meta name="url" content="https://ximenitagarces.github.io/desgaste2.0/">
+    
     <!-- Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://ximenitagarces.github.io/desgaste2.0/">
     <meta property="twitter:title" content="Desgaste">
     <meta property="twitter:description" content="Paralelismo de la erosión física y material">
     <meta property="twitter:image" content="https://ximenitagarces.github.io/desgaste2.0/img/movilidad-cdmx-og.png">
-  
+
     <!-- Open Graph -->
     <meta property="og:title" content="Desgaste">
     <meta property="og:description" content="Paralelismo de la erosión física y material">
@@ -30,110 +31,105 @@
     <meta property="og:url" content="https://ximenitagarces.github.io/desgaste2.0/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="desgaste">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
-    <link rel="stylesheet" href="https://use.typekit.net/dyt1bon.css">
     <link rel="stylesheet" href="./css/style.css">
-  
+    
     <style>
-    .galeria .card .imagen {
-      width: 100%;
-      height: 150px;
-      border: 2px solid transparent;
-      transition: border 0.3s;
-      overflow: hidden;
-      background-color: #333;
-  }
+        .galeria .card .imagen {
+            width: 100%;
+            height: 150px;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+            overflow: hidden;
+            background-color: #333;
+        }
 
-  .galeria .card .imagen img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-  }
+        .galeria .card .imagen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
 
-  .galeria .card:hover .imagen {
-      border: 2px solid #2196f3;
-  }
+        .galeria .card:hover .imagen {
+            border: 2px solid #2196f3;
+        }
 
-  .galeria .card:hover .imagen img {
-      transform: scale(1.05);
-  }
+        .galeria .card:hover .imagen img {
+            transform: scale(1.05);
+        }
 
-  .galeria {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 20px;
-      gap: 20px;
-  }
+        .galeria {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            gap: 20px;
+        }
 
-  .galeria .card {
-      width: 200px;
-      margin: 10px;
-      text-align: left;
-  }
-</style>
-  </head>
-  
+        .galeria .card {
+            width: 200px;
+            margin: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+
 <body class="home">
+    <!-- Menú de navegación -->
+    <nav class="navbar">
+        <div class="circle"></div>
+        <ul>
+            <li><a class="nav-link" href="home.html" title="ir a home">home</a></li>
+            <li><a class="nav-link" href="manifiesto.html" title="Ver manifiesto">manifiesto</a></li>
+            <li><a class="nav-link" href="imagenes.html" title="ir a imágenes">imagenes</a></li>
+            <li><a class="nav-link" href="testimonios.html" title="ir a testimonios">testimonios</a></li>
+        </ul>
+    </nav>
+    <hr>
 
-  <!-- Menú de navegación -->
-  <nav class="navbar">
-    <div class="circle"></div>
-    <ul>
-      <li><a class="nav-link" href="home.html" title="ir a home">home</a></li>
-      <li><a class="nav-link" href="manifiesto.html" title="Ver">manifiesto</a>
-      <li><a class="nav-link" href="imagenes.html" title="ir a imágenes">imagenes</a>
-      <li><a class="nav-link" href="testimonios.html" title="ir a testimonios">testimonios</a>
-    </ul>
-  </nav>
-  <hr>
-  <!-- Barra de navegación -->
-   <!-- > <ul>
-      <li><a href= home.html" title="ir a home"</title></a></li>
-      <li><a href= geolocalizador title="ir a geolocalizador"</a></li>
-      <li><a class="nav-link" href="manifiesto.html" title="Ver">manifiesto</a>
-      <li><a href= "nav-link" href= "imagenes.html" title="Ver">imagenes</a>
-      <li><a href= "nav-link" href= "testimonio.html" title="Ver">testimonio</a>
-     
-    </ul> 
-  </nav>
+    <!-- Título principal -->
+    <header>
+        <h1 class="titulo">desgaste</h1>
+    </header>
 
-  <hr>
+    <!-- Galería de recuadros -->
+    <section class="galeria">
+        <div class="card">
+            <div class="imagen">
+                <img src="./img/1.jpg" alt="Manifiesto - Desgaste urbano">
+            </div>
+            <p>manifiesto</p>
+        </div>
 
-  <!-- Título principal -->
-  <header>
-    <h1 class="titulo">desgaste</h1>
-  </header>
+        <div class="card">
+            <div class="imagen">
+                <img src="./img/2.jpg" alt="Testimonios - Experiencias de movilidad">
+            </div>
+            <p>testimonios</p>
+            <ul class="sublista">
+                <li>01 testimonio</li>
+                <li>02 testimonio</li>
+                <li>03 testimonio</li>
+                <li>04 testimonio</li>
+                <li>05 testimonio</li>
+            </ul>
+        </div>
 
-  <!-- Galería de recuadros -->
-  <section class="galeria">
-    <div class="card">
-      <div class="imagen"></div>
-      <p>manifiesto</p>
-    </div>
+        <div class="card">
+            <div class="imagen">
+                <img src="./img/3.jpg" alt="Imágenes - Erosión visual">
+            </div>
+            <p>imágenes</p>
+        </div>
 
-    <div class="card">
-      <div class="imagen"></div>
-      <p>testimonios</p>
-      <ul class="sublista">
-        <li>01 testimonio</li>
-        <li>02 testimonio</li>
-        <li>03 testimonio</li>
-        <li>04 testimonio</li>
-        <li>05 testimonio</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <div class="imagen"></div>
-      <p>imágenes</p>
-    </div>
-
-    <div class="card">
-      <div class="imagen"></div>
-      <p> geolocalizador</p>
-    </div>
-  </section>
+        <div class="card">
+            <div class="imagen">
+                <img src="./img/4.jpg" alt="Geolocalizador - Mapeo urbano">
+            </div>
+            <p>geolocalizador</p>
+        </div>
+    </section>
 </body>
 </html>
