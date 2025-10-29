@@ -160,13 +160,13 @@ body.testimonio nav ul {
 body.testimonio nav a {
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 body.testimonio hr {
   border: none;
   border-top: 1px solid white;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 body.testimonio footer {
@@ -174,7 +174,7 @@ body.testimonio footer {
   justify-content: space-between;
   font-size: 14px;
   padding: 40px;
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(151, 74, 74);
 }
 
 /* Título de testimonios */
