@@ -6,97 +6,139 @@
 
 /* Estilos generales */
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Barra de navegación */
-  .navbar {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-  }
-  
-  .navbar .circle {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: white;
-    margin-right: 15px;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  a.nav-link {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-    opacity: 0.8;
-  }
-  a:hover {
-    opacity: 1;
-  }
-  /* Línea separadora */
-  hr {
-    border: none;
-    border-top: 1px solid white;
-    margin: 10px 0;
-  }
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  /* Título */
-  .titulo {
-    text-align: right;
-    padding: 20px;
-    font-size: 60px;
-    font-weight: 300;
-  }
-  
-  /* Galería */
-  .galeria {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-  }
-  
-  .card {
-    width: 200px;
-    margin: 20px;
-    text-align: left;
-  }
-  
-  .card .imagen {
-    width: 100%;
-    height: 150px;
-    background-color: white; /* Aquí irá la imagen */
-    border: 2px solid transparent;
-    transition: border 0.3s;
-  }
-  
-  .card .imagen:hover {
-    border: 2px solid #2196f3;
-  }
-  
-  .card p {
-    margin-top: 8px;
-    font-size: 14px;
-  }
-  
-  .sublista {
-    font-size: 12px;
-    margin: 5px 0 0 0;
-    padding: 0;
-    list-style: none;
-  }
+/* Barra de navegación */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.navbar .circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 15px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+a.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+/* Línea separadora */
+hr {
+  border: none;
+  border-top: 1px solid white;
+  margin: 10px 0;
+}
+
+/* Título */
+.titulo {
+  text-align: right;
+  padding: 20px;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+/* Galería */
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.card {
+  width: 200px;
+  margin: 20px;
+  text-align: left;
+}
+
+.card .imagen {
+  width: 100%;
+  height: 150px;
+  background-color: white;
+  /* Aquí irá la imagen */
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.card .imagen:hover {
+  border: 2px solid #2196f3;
+}
+
+.card p {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.sublista {
+  font-size: 12px;
+  margin: 5px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+.galeria .card .imagen {
+  width: 100%;
+  height: 150px;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.galeria .card .imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.galeria .card:hover .imagen {
+  border: 2px solid #2196f3;
+}
+
+.galeria .card:hover .imagen img {
+  transform: scale(1.05);
+}
+
+.galeria {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.galeria .card {
+  width: 200px;
+  margin: 10px;
+  text-align: left;
+}
 
 /* --- ESTILOS PARA TESTIMONIOS (AGREGAR AQUÍ) --- */
 
@@ -118,13 +160,13 @@ body.testimonio nav ul {
 body.testimonio nav a {
   text-decoration: none;
   color: white;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 body.testimonio hr {
   border: none;
   border-top: 1px solid white;
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 body.testimonio footer {
@@ -132,7 +174,7 @@ body.testimonio footer {
   justify-content: space-between;
   font-size: 14px;
   padding: 40px;
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(151, 74, 74);
 }
 
 /* Título de testimonios */
@@ -193,6 +235,7 @@ body.testimonio footer {
   font-size: 0.9rem;
   margin-top: 0;
 }
+
 /* ESTILOS PARA LAS IMÁGENES DEL HOME - AGREGAR AL FINAL */
 .galeria .card .imagen {
   width: 100%;
