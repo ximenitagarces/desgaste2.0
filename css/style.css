@@ -1,5 +1,37 @@
+
+
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url('neuemontreal-regular-webfont.woff2') format('woff2'),
+       url('neuemontreal-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'neue_montreallight';
+  src: url('neuemontreal-light-webfont.woff2') format('woff2'),
+       url('neuemontreal-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'neue_montrealbold';
+  src: url('neuemontreal-bold-webfont.woff2') format('woff2'),
+       url('neuemontreal-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 :root {
-  --font-base: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+  --font-base: 'Neue Montreal', Helvetica, Arial, Lucida, sans-serif;
+  --font-light: 'Neue Montreal Light', Helvetica, Arial, Lucida, sans-serif;
+  --font-bold: 'Neue Montreal Bold', Helvetica, Arial, Lucida, sans-serif;
   --color-text: #ffffff;
   --color-bg: #2e4351;
 }
@@ -8,7 +40,7 @@
 body {
   background-color: black;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-base);
   margin: 0;
   padding: 0;
 }
