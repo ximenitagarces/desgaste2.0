@@ -32,14 +32,14 @@
   --font-base: 'Neue Montreal', Helvetica, Arial, Lucida, sans-serif;
   --font-light: 'Neue Montreal Light', Helvetica, Arial, Lucida, sans-serif;
   --font-bold: 'Neue Montreal Bold', Helvetica, Arial, Lucida, sans-serif;
-  --color-text: #ffffff;
+  --color-text: rgb(0, 0, 0);
   --color-bg: #2e4351;
 }
 
 /* Estilos generales */
 body {
-  background-color: black;
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-family: var(--font-base);
   margin: 0;
   padding: 0;
@@ -56,7 +56,7 @@ body {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgb(0, 0, 0);
   margin-right: 15px;
 }
 
@@ -70,7 +70,7 @@ body {
 
 a.nav-link {
   text-decoration: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 14px;
   opacity: 0.8;
 }
@@ -140,7 +140,7 @@ hr {
   border: 2px solid transparent;
   transition: border 0.3s;
   overflow: hidden;
-  background-color: #333;
+  background-color: #000000;
 }
 
 .galeria .card .imagen img {
@@ -175,7 +175,7 @@ hr {
 /* --- ESTILOS PARA TESTIMONIOS (AGREGAR AQUÍ) --- */
 
 body.testimonio {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   color: white;
   font-family: Arial, sans-serif;
   margin: 0;
