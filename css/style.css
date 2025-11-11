@@ -41,9 +41,19 @@ body {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   font-family: var(--font-base);
-  margin: 0;
+  margin: 10;
   padding: 0;
+  font-size: 15px;
 }
+main class="contenido" {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-family: var(--font-base);
+  margin: 10;
+  padding: 0;
+  font-size: 200px;
+}
+
 
 /* Barra de navegación */
 .navbar {
@@ -57,7 +67,7 @@ body {
   height: 15px;
   border-radius: 50%;
   background-color: rgb(0, 0, 0);
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 .navbar ul {
@@ -72,17 +82,17 @@ a.nav-link {
   text-decoration: none;
   color: rgb(0, 0, 0);
   font-size: 14px;
-  opacity: 0.8;
+  opacity: 10;
 }
 
 a:hover {
-  opacity: 1;
+  opacity: 10;
 }
 
 /* Línea separadora */
 hr {
   border: none;
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(0, 0, 0);
   margin: 10px 0;
 }
 
@@ -91,7 +101,7 @@ hr {
   text-align: right;
   padding: 20px;
   font-size: 60px;
-  font-weight: 300;
+  font-weight: 200;
 }
 
 /* Galería */
@@ -118,7 +128,7 @@ hr {
 }
 
 .card .imagen:hover {
-  border: 2px solid #2196f3;
+  border: 2px solid #ffffff;
 }
 
 .card p {
@@ -140,7 +150,7 @@ hr {
   border: 2px solid transparent;
   transition: border 0.3s;
   overflow: hidden;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .galeria .card .imagen img {
@@ -151,7 +161,7 @@ hr {
 }
 
 .galeria .card:hover .imagen {
-  border: 2px solid #2196f3;
+  border: 2px solid #ffffff;
 }
 
 .galeria .card:hover .imagen img {
@@ -174,7 +184,7 @@ hr {
 
 /* --- ESTILOS PARA TESTIMONIOS (AGREGAR AQUÍ) --- */
 
-body.testimonio {
+body.testimonio 1 {
   background-color: rgb(0, 0, 0);
   color: white;
   font-family: Arial, sans-serif;
@@ -192,86 +202,20 @@ body.testimonio nav ul {
 body.testimonio nav a {
   text-decoration: none;
   color: white;
-  font-size: 20px;
+  font-size: 600px;
 }
-
+/* --- Estilo de subtitulo "testimonio --- */
 body.testimonio hr {
   border: none;
   border-top: 1px solid white;
   margin: 20px 0;
 }
 
-body.testimonio footer {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  padding: 40px;
-  border-top: 1px solid rgb(151, 74, 74);
-}
-
-/* Título de testimonios */
-.titulo-italic {
-  font-size: 2.5rem;
-  font-style: italic;
-  text-align: right;
-  margin: 30px 40px;
-  font-family: "neue-haas-unica", sans-serif;
-  font-weight: 300;
-}
-
-/* Grid de testimonios */
-.testimonios-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 40px;
-}
-
-/* Tarjetas de testimonio */
-.testimonios-grid .card {
-  background: #1a1a1a;
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 1.5rem;
-  text-align: left;
-  margin: 0;
-  width: auto;
-}
-
-.foto {
-  width: 100%;
-  height: 200px;
-  background-color: #333;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  overflow: hidden;
-}
-
-.foto img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.testimonios-grid .card h2 {
-  font-family: "neue-haas-unica", sans-serif;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-}
-
-.testimonios-grid .card p {
-  font-family: "neue-haas-unica", sans-serif;
-  font-weight: 400;
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  margin-top: 0;
-}
 
 /* ESTILOS PARA LAS IMÁGENES DEL HOME - AGREGAR AL FINAL */
 .galeria .card .imagen {
   width: 100%;
-  height: 150px;
+  height: 250px;
   border: 2px solid transparent;
   transition: border 0.3s;
   overflow: hidden;
@@ -286,7 +230,7 @@ body.testimonio footer {
 }
 
 .galeria .card:hover .imagen {
-  border: 2px solid #2196f3;
+  border: 2px solid #000000;
 }
 
 .galeria .card:hover .imagen img {
@@ -306,3 +250,4 @@ body.testimonio footer {
   margin: 10px;
   text-align: left;
 }
+
