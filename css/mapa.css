@@ -1,0 +1,14 @@
+#recorrido_f polyline {
+    fill: none;
+    stroke: green;
+}
+#recorrido_f:hover + polyline {
+    stroke: red;
+}
+.recorrido {
+    fill: none;
+    stroke: green;
+}
+.recorrido:hover {
+    stroke: red;
+}
