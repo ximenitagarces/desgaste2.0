@@ -96,91 +96,14 @@ hr {
   margin: 10px 0;
 }
 
-/* Título */
+/* Título paralelismo de la erosion fisica y material */
 .titulo {
   text-align: right;
-  padding: 20px;
-  font-size: 60px;
-  font-weight: 200;
+  padding: 10px;
+  font-size: 5;
+  font-weight: 30;
 }
 
-/* Galería */
-.galeria {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 20px;
-}
-
-.card {
-  width: 200px;
-  margin: 20px;
-  text-align: left;
-}
-
-.card .imagen {
-  width: 100%;
-  height: 150px;
-  background-color: white;
-  /* Aquí irá la imagen */
-  border: 2px solid transparent;
-  transition: border 0.3s;
-}
-
-.card .imagen:hover {
-  border: 2px solid #ffffff;
-}
-
-.card p {
-  margin-top: 8px;
-  font-size: 14px;
-}
-
-.sublista {
-  font-size: 12px;
-  margin: 5px 0 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-
-.galeria .card .imagen {
-  width: 100%;
-  height: 150px;
-  border: 2px solid transparent;
-  transition: border 0.3s;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-
-.galeria .card .imagen img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.galeria .card:hover .imagen {
-  border: 2px solid #ffffff;
-}
-
-.galeria .card:hover .imagen img {
-  transform: scale(1.05);
-}
-
-.galeria {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  padding: 20px;
-  gap: 20px;
-}
-
-.galeria .card {
-  width: 200px;
-  margin: 10px;
-  text-align: left;
-}
 
 /* --- ESTILOS PARA TESTIMONIOS (AGREGAR AQUÍ) --- */
 
@@ -250,4 +173,3 @@ body.testimonio hr {
   margin: 10px;
   text-align: left;
 }
-
