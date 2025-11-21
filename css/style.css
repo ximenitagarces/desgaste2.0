@@ -34,6 +34,7 @@
   --font-bold: 'Neue Montreal Bold', Helvetica, Arial, Lucida, sans-serif;
   --color-text: rgb(0, 0, 0);
   --color-bg: #2e4351;
+  margin: 70px;
 }
 /* ---------------------------
    TIPOGRAFÍA BASE DEL SITIO
@@ -51,7 +52,7 @@ body {
 --------------------------- */
 nav {
   width: 100%;
-  margin: 20px;
+  margin: 0px;
   display: flex;
   justify-content: right;
   padding: 10px 0;
@@ -61,15 +62,17 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 60px;   /* ← distancia entre palabras del menú */
-  margin: 0;
+  margin: 10;
   padding: 0;
 }
-
+/* ---------------------------
+ cambio de menu superior 
+--------------------------- */
 nav a {
   text-decoration: none;
   color: #111;
-  font-size: 16px;     /* ← cambia el tamaño del menú aquí */
-  font-weight: 400;    /* ← cambia el peso del menú aquí */
+  font-size: 15px;     /* ← tamaño del menú aquí */
+  font-weight: 400;    /* ← peso del menú aquí */
 }
 
 /* ---------------------------
