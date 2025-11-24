@@ -1,4 +1,5 @@
 @import 'scroll.css';
+@import 'map.css';
 
 @font-face {
   font-family: 'Neue Montreal';
@@ -131,24 +132,4 @@ nav a {
   width: 250px;          /* ← tamaño de las imágenes */
   height: auto;
   filter: grayscale(100%) contrast(90%);
-}
-
-
-/* ---------------------------
- MAPA.CSS)
---------------------------- */
-
-#recorrido_f polyline {
-  fill: none;
-  stroke: #5B4732;;
-}
-#recorrido_f:hover + polyline {
-  stroke: black;
-}
-.recorrido {
-  fill: none;
-  stroke: #5B4732;;
-}
-.recorrido:hover {
-  stroke: black;
 }

@@ -1,0 +1,61 @@
+#mapanav svg {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  max-width: 100vh;
+  margin: 0 auto;
+}
+/* Estilos base del mapa SVG */
+.map-path {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.75;
+  stroke-miterlimit: 10;
+}
+
+.map-polyline-base {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 0.5;
+  stroke-miterlimit: 10;
+}
+
+.map-polyline-route {
+  fill: none;
+  stroke: #5B4732;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+/* Área sensible invisible para hover */
+.map-hit-area {
+  fill: none;
+  cursor: pointer;
+  pointer-events: all;
+  opacity: 0;
+}
+
+/* Estilos para grupos de enlaces */
+.svg-link-group {
+  cursor: pointer;
+}
+
+.svg-link-group .recorrido {
+  fill: none;
+  stroke: #5B4732;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  transition: fill 0.3s ease;
+}
+
+/* Hover: aplicar fill al polyline */
+/* Estado active: aplicar fill al polyline */
+.svg-link-group:hover .recorrido,
+.svg-link-group.active .recorrido {
+  stroke: red;
+}
+
+.svg-link-group rect {
+  fill: green;
+  opacity: .5
+}
