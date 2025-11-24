@@ -80,7 +80,7 @@ nav a {
  TÍTULO PRINCIPAL (desgaste)
 --------------------------- */
 .titulo {
-  font-size: 50px;    /* ← CAMBIA EL TAMAÑO AQUÍ  (PARALELISMO) */
+  font-size: 100px;    /* ← CAMBIA EL TAMAÑO AQUÍ  (PARALELISMO) */
   font-weight: 100;    /* ← CAMBIA EL PESO AQUÍ (700, 800, 900…) */
   margin: 10px 10 0 40px;  /* ← controla la posición */
   letter-spacing: -2px;
@@ -97,7 +97,7 @@ nav a {
  SUBTÍTULO DERECHA
 --------------------------- */
 .subtitulo {
-  font-size: 90px;      /* ← tamaño del texto a la derecha */
+  font-size: 120px;      /* ← tamaño del texto a la derecha */
   font-weight: 100;     /* ← peso */
   text-align: right;
   margin-right: 40px;
@@ -110,7 +110,7 @@ nav a {
 --------------------------- */
 .descripcion {
   max-width: 900px;
-  font-size: 18px;       /* ← tamaño del párrafo */
+  font-size: 100px;       /* ← tamaño del párrafo */
   font-weight: 400;      /* ← peso */
   line-height: 1.45;
   margin: 140px auto 0 auto;  /* ← distancia respecto del título */
