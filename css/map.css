@@ -56,6 +56,10 @@
 }
 
 .svg-link-group rect {
-  fill: green;
+  fill: transparent;
   opacity: .5
+}
+
+.invisible {
+  fill: transparent;
 }
