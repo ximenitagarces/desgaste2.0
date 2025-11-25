@@ -56,13 +56,13 @@ nav {
   margin: 0px;
   display: flex;
   justify-content: right;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
-nav ul {
+nav ul {   /* ←  menú de busqueda*/
   list-style: none;
   display: flex;
-  gap: 60px;   /* ← distancia entre palabras del menú */
+  gap: 50px;   /* ← distancia entre palabras del menú */
   margin: 10;
   padding: 0;
 }
@@ -73,15 +73,15 @@ nav a {
   text-decoration: none;
   color: #111;
   font-size: 15px;     /* ← tamaño del menú aquí */
-  font-weight: 400;    /* ← peso del menú aquí */
+  font-weight: 700;    /* ← peso del menú aquí */
 }
 
 
 /* ---------------------------
- TÍTULO PRINCIPAL (desgaste)
+ TÍTULO PRINCIPAL (desgaste paralelismo)
 --------------------------- */
 .titulo {
-  font-size: 100px;    /* ← CAMBIA EL TAMAÑO AQUÍ  (PARALELISMO) */
+  font-size: 80px;    /* ← CAMBIA EL TAMAÑO AQUÍ  (PARALELISMO) */
   font-weight: 100;    /* ← CAMBIA EL PESO AQUÍ (700, 800, 900…) */
   margin: 10px 10 0 40px;  /* ← controla la posición */
   letter-spacing: -2px;
@@ -98,7 +98,7 @@ nav a {
  SUBTÍTULO DERECHA
 --------------------------- */
 .subtitulo {
-  font-size: 120px;      /* ← tamaño del texto a la derecha */
+  font-size: 4px;      /* ← tamaño del texto a la derecha */
   font-weight: 100;     /* ← peso */
   text-align: right;
   margin-right: 40px;
@@ -116,6 +116,16 @@ nav a {
   line-height: 1.45;
   margin: 140px auto 0 auto;  /* ← distancia respecto del título */
   padding: 0 40px;            /* ← margen izquierdo/derecho */
+}
+/* ----subtitulo explicacion ------ */
+.contenido {
+  font-size: 30px;
+  font-weight: 50;
+}
+
+.repocard.jpeg {
+  width: 7000px;   /* AQUÍ CAMBIAS EL TAMAÑO */
+  height: auto;   /* Mantiene proporción */
 }
 
 
