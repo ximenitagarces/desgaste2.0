@@ -55,15 +55,16 @@ nav {
   width: 100%;
   margin: 0px;
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   padding: 20px 0;
+  align-items: center;
 }
 
 nav ul {   /* ←  menú de busqueda*/
   list-style: none;
   display: flex;
   gap: 50px;   /* ← distancia entre palabras del menú */
-  margin: 10;
+  margin: 0;
   padding: 0;
 }
 /* ---------------------------
