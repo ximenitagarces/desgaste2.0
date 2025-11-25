@@ -27,3 +27,8 @@ body {
     line-height: 211px;
     letter-spacing: 1px;
 }
+
+.testimonio b,
+.testimonio strong{
+    font-weight:900;
+}

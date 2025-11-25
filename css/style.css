@@ -67,14 +67,21 @@ nav ul {   /* ←  menú de busqueda*/
   margin: 0;
   padding: 0;
 }
+
 /* ---------------------------
  cambio de menu superior 
 --------------------------- */
+nav img{
+  width: 100%;
+  max-width: 300px;
+  min-width: 120px;
+}
 nav a {
   text-decoration: none;
   color: #111;
   font-size: 15px;     /* ← tamaño del menú aquí */
   font-weight: 700;    /* ← peso del menú aquí */
+  display: contents;
 }
 
 
