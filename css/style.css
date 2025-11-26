@@ -1,6 +1,13 @@
 @import 'scroll.css';
 @import 'map.css';
 
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 @font-face {
   font-family: 'Neue Montreal';
   src: url('neuemontreal-regular-webfont.woff2') format('woff2'),
@@ -35,7 +42,7 @@
   --font-bold: 'Neue Montreal Bold', Helvetica, Arial, Lucida, sans-serif;
   --color-text: rgb(0, 0, 0);
   --color-bg: #2e4351;
-  margin: 70px;
+  --color-testimonio-base: #cfcfcf;
 }
 /* ---------------------------
    TIPOGRAFÍA BASE DEL SITIO
@@ -47,43 +54,6 @@ body {
   background: white;
   color: #111;
 }
-
-/* ---------------------------
- MENÚ SUPERIOR  TRAYECTOS-TESTI 1-TEST2
---------------------------- */
-nav {
-  width: 100%;
-  margin: 0px;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 0;
-  align-items: center;
-}
-
-nav ul {   /* ←  menú de busqueda*/
-  list-style: none;
-  display: flex;
-  gap: 50px;   /* ← distancia entre palabras del menú */
-  margin: 0;
-  padding: 0;
-}
-
-/* ---------------------------
- cambio de menu superior 
---------------------------- */
-nav img{
-  width: 100%;
-  max-width: 300px;
-  min-width: 120px;
-}
-nav a {
-  text-decoration: none;
-  color: #111;
-  font-size: 15px;     /* ← tamaño del menú aquí */
-  font-weight: 700;    /* ← peso del menú aquí */
-  display: contents;
-}
-
 
 /* ---------------------------
  TÍTULO PRINCIPAL (desgaste paralelismo)

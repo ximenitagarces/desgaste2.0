@@ -20,12 +20,24 @@ body {
     font-size: 28px;
 }
 
+.testimonio {
+    color: var(--color-testimonio-base, #cfcfcf);
+    padding: 1em;
+    margin: 1em;
+}
+
 .testimonio p {
-    margin: 20px;
-    margin-top: 240px;
-    font-size: 210px;
-    line-height: 211px;
+    margin-top: 10vh;
+    font-size: 10vw;
+    line-height: 1em;
     letter-spacing: 1px;
+    color: inherit;
+}
+
+.testimonio .word {
+    display: inline-block;
+    color: inherit;
+    transition: color 0.3s ease;
 }
 
 .testimonio b,

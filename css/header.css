@@ -1,0 +1,69 @@
+header#main-header {
+    position: absolute;
+    background-color: #FFF;
+    color: #000;
+    width: 100%;
+    padding: .5em 1em;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+/* ---------------------------
+ MENÚ SUPERIOR  TRAYECTOS-TESTI 1-TEST2
+--------------------------- */
+header#main-header nav {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+
+header#main-header nav ul {
+    /* ←  menú de busqueda*/
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    /* ← distancia entre palabras del menú */
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------
+   cambio de menu superior 
+  --------------------------- */
+
+header#main-header nav a {
+    text-decoration: none;
+    color: #111;
+    font-size: 15px;
+    /* ← tamaño del menú aquí */
+    font-weight: 700;
+    /* ← peso del menú aquí */
+    display: contents;
+}
+
+
+/* Tablet: Mostrar texto con tamaño pequeño */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header#main-header nav a {
+        font-size: 16px;
+    }
+}
+
+/* Desktop: Texto completo con tamaño grande */
+@media (min-width: 1024px) {
+    header#main-header nav a {
+        font-size: 18px;
+    }
+}
+
+#logo {
+    width: 8vw;
+    height: auto;
+    display: block;
+    min-width: 78px;
+}
