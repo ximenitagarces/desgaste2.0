@@ -1,15 +1,22 @@
 header#main-header {
-    position: absolute;
+    position: relative;
     background-color: #FFF;
     color: #000;
     width: 100%;
     padding: .5em 1em;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 1000;
+    will-change: transform;
 }
 
+header#main-header.visible {
+    position: fixed;
+}
 
+header#main-header.is-hidden {
+    pointer-events: none;
+}
 /* ---------------------------
  MENÚ SUPERIOR  TRAYECTOS-TESTI 1-TEST2
 --------------------------- */
@@ -31,6 +38,7 @@ header#main-header nav ul {
     margin: 0;
     padding: 0;
 }
+
 
 /* ---------------------------
    cambio de menu superior 

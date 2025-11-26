@@ -53,6 +53,8 @@ body {
   padding: 0;
   background: white;
   color: #111;
+  min-height: 100vh;
+  overflow-y: auto;
 }
 
 /* ---------------------------
@@ -121,4 +123,20 @@ body {
   width: 250px;          /* ← tamaño de las imágenes */
   height: auto;
   filter: grayscale(100%) contrast(90%);
+}
+
+/* ---------------------------
+   Ajustes para Lenis / scroll nativo
+--------------------------- */
+html.lenis {
+  height: auto;
+}
+
+body.lenis,
+body.lenis-smooth {
+  overflow-y: auto;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
 }

@@ -64,6 +64,13 @@ Header.prototype = {
     },
 
     /**
+     * Getter: indica si el header está fijado
+     */
+    get isFixed() {
+        return this.container.classList.contains("fixed");
+    },
+
+    /**
      * Asigna el valor actual del scroll a la propiedad 'y'
      * @param {number} _y El valor de window.scrollY
      */
@@ -76,10 +83,10 @@ Header.prototype = {
      */
     onScroll: function() {
         // La lógica interna no cambia, pero se usa 'function' en lugar de un método de clase ES6
-        if (this.direction == "down") {
+        if (this.direction === "down") {
             this.scrollDown();
         } else {
-            this.show(); // Siempre que hagan scrollup debemos mostrar el header
+            this.scrollUp();
         }
         
         if (window.scrollY === 0 && !this.inTop) {
@@ -95,36 +102,53 @@ Header.prototype = {
      * o mejor dicho tenga posición relativa, fixed sólo cuando suba el scroll
      */
     scrollDown: function() {
-        if (window.scrollY > window.innerHeight) {
-            if (this.inTop) {
-                this.setFixed();
-            } else {
-                this.hide();
-            }
+        if (!this.isFixed) return;
+        this.hide(this.release.bind(this));
+    },
+
+    scrollUp: function() {
+        if (window.scrollY <= 0) {
+            this.reset();
+            return;
         }
+        this.pin();
+        this.show();
     },
     
     /**
      * Establece el estado "fijo" o inicial de oculto antes de la animación
      */
-    setFixed: function() {
+    pin: function() {
+        if (this.isFixed) return;
+        this.container.classList.add("fixed");
+        this.container.classList.remove("in-top");
+        document.body.style.paddingTop = this.height + "px";
         // Asumiendo que 'gsap' está disponible globalmente
         gsap.set(this.container, {
             y: "-100%"
         });
+    },
+
+    release: function() {
+        if (!this.isFixed) return;
+        this.container.classList.remove("fixed");
+        document.body.style.paddingTop = "";
+        this.container.removeAttribute("style");
         this.container.classList.remove("visible");
-        this.container.classList.remove("in-top");
     },
 
     /**
      * Muestra el encabezado (con animación GSAP)
      */
     show: function() {
+        if (!this.isFixed) {
+            this.pin();
+        }
         if (this.isVisible) return false;
         
         this.container.classList.add("visible");
         gsap.to(this.container, {
-            duration: 0.5,
+            duration: 0.4,
             ease: Power2.easeOut,
             y: "0%"
         });
@@ -133,14 +157,19 @@ Header.prototype = {
     /**
      * Oculta el encabezado (con animación GSAP)
      */
-    hide: function() {
-        if (!this.isVisible) return false;
+    hide: function(onComplete) {
+        if (!this.isVisible) {
+            if (typeof onComplete === "function") {
+                onComplete();
+            }
+            return false;
+        }
         
         this.container.classList.remove("visible");
         gsap.to(this.container, {
-            duration: 0.5,
-            ease: Power2.easeOut,
-            y: "-100%"
+            duration: 0.3,
+            ease: Power2.easeIn,
+            onComplete: onComplete || null
         });
     },
 
@@ -148,11 +177,10 @@ Header.prototype = {
      * Restablece el encabezado a su estado inicial en la parte superior
      */
     reset: function() {
-        this.container.removeAttribute("style");
+        this.release();
         this.container.classList.add("visible");
         this.container.classList.add("in-top");
     }
 };
 
-// Ejemplo de cómo se instanciaría:
 var headerInstance = new Header();
