@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   paragraphs.forEach((paragraph) => {
     const split = new SplitType(paragraph, { types: 'words', tagName: 'span' });
 
-    gsap.set(split.words, { color: 'var(--color-testimonio-base, #cfcfcf)', opacity: 0.7 });
+    gsap.set(split.words, { color: 'red', opacity: 0.5 });
 
     gsap.to(split.words, {
       color: '#000',

@@ -52,7 +52,7 @@
 /* Estado active: aplicar fill al polyline */
 .svg-link-group:hover .recorrido,
 .svg-link-group.active .recorrido {
-  stroke: red;
+  stroke: black;
 }
 
 .svg-link-group rect {

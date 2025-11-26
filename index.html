@@ -38,26 +38,24 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./css/testimonio.css">
 </head>
-<style>
-	body {
-		background: rgb(255, 255, 255);
-	}
-</style>
+
 
 <body class="home">
 	<!-- Menú de navegación -->
-	<nav class="navbar">
-		<a href="./" title="Ir a home">
-			<img src="./img/logo-desgaste.png" alt="Desgaste" width="200">
-		</a>
-		<ul>
-			<li><a class="nav-link" href="trayectos.html" title="ir a trayectos">Trayectos</a></li>
-			<li><a class="nav-link" href="testimonio 1.html" title="ir a testimonio 1">testimonio 1</a></li>
-			<li><a class="nav-link" href="testimonio 2.html" title="ir a testimonio 2">testimonio 2</a></li>
-			<li><a class="nav-link" href="testimonio 3.html" title="ir a testimonio 3">testimonio 3</a></li>
-			<li><a class="nav-link" href="testimonio 4.html" title="ir a testimonio 4">testimonio 4</a></li>
-		</ul>
-	</nav>
+	<header id="main-header">
+		<nav class="navbar">
+			<a href="./" title="Ir a home">
+				<img src="./img/logo-desgaste.png" alt="Desgaste" width="200">
+			</a>
+			<ul>
+				<li><a class="nav-link" href="index.html" title="ir a trayectos">Trayectos</a></li>
+				<li><a class="nav-link" href="testimonio-1.html" title="ir a testimonio 1">testimonio 1</a></li>
+				<li><a class="nav-link" href="testimonio-2.html" title="ir a testimonio 2">testimonio 2</a></li>
+				<li><a class="nav-link" href="testimonio-3.html" title="ir a testimonio 3">testimonio 3</a></li>
+				<li><a class="nav-link" href="testimonio-4.html" title="ir a testimonio 4">testimonio 4</a></li>
+			</ul>
+		</nav>
+	</header>
 	<hr>
 	<!-- Título principal -->
 	<header>
@@ -92,7 +90,7 @@
 						<!-- Imagen que aparece solo al hacer hover sobre el recorrido F -->
 						<image
 							class="map-hover-image map-hover-image-f"
-							xlink:href="./img/1.jpg"
+							xlink:href="./img/web1.jpg"
 							x="150"
 							y="330"
 							width="120"
@@ -109,7 +107,7 @@
 						<!-- Imagen que aparece solo al hacer hover sobre el recorrido E -->
 						<image
 							class="map-hover-image map-hover-image-e"
-							xlink:href="./img/2.jpg"
+							xlink:href="./img/web2.jpg"
 							x="260"
 							y="230"
 							width="130"
@@ -120,14 +118,15 @@
 
 				<a href="./testimonio 3.html" title="recorrido g">
 					<g id="recorrido_g" class="svg-link-group">
-						<polyline class="cls-2"
-							points="244.16 341.71 237.41 381.99 241.83 385.3 241.83 393.02 249 399.09 247.16 413.81 254.88 426.5 279.9 433.12" />
-						<polygon class="cls-1 invisible"
-							points="282.18 438.81 232.1 421.31 230.2 376.91 244.16 338.78 251.1 352.1 260.5 416.87 284.14 431.5 282.18 438.81" />
+						<polyline class="recorrido"
+							points=points="244.16 341.71 237.41 381.99 241.83 385.3 241.83 393.02 249 399.09 247.16 413.81 254.88 426.5 279.9 433.12"/>
+						<polygon class="cls-1"
+							points="232.1 403.15 244.16 437.46 286.96 443.17 284.14 428.27 257.38 415.22 251.07 393.09 250.71 353.14 232.1 358.64 232.1 403.15"/>
+						</g>
 						<!-- Imagen que aparece solo al hacer hover sobre el recorrido G -->
 						<image
 							class="map-hover-image map-hover-image-g"
-							xlink:href="./img/3.jpg"
+							xlink:href="./img/web3.jpg"
 							x="210"
 							y="380"
 							width="130"
@@ -144,7 +143,7 @@
 						<!-- Imagen que aparece solo al hacer hover sobre el recorrido D -->
 						<image
 							class="map-hover-image map-hover-image-d"
-							xlink:href="./img/4.jpg"
+							xlink:href="./img/web4.jpg"
 							x="290"
 							y="390"
 							width="130"
