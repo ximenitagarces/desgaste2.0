@@ -63,3 +63,19 @@
 .invisible {
   fill: transparent;
 }
+
+/* ---------------------------------
+   Imágenes de recorridos (hover)
+---------------------------------- */
+#mapanav svg .map-hover-image {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+/* Mostrar la imagen solo cuando se hace hover
+   sobre el enlace (grupo del recorrido) */
+#mapanav svg a:hover .map-hover-image,
+#mapanav svg .svg-link-group:hover .map-hover-image {
+  opacity: 1;
+}
