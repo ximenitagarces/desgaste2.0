@@ -22,8 +22,6 @@ body {
 
 .testimonio {
     color: var(--color-testimonio-base, #cfcfcf);
-    padding: 1em;
-    margin: 1em;
 }
 
 .testimonio p {

@@ -101,6 +101,7 @@ body {
 .contenido {
   font-size: 30px;
   font-weight: 50;
+  padding: 1em;
 }
 
 .repocard.jpeg {

@@ -67,6 +67,9 @@
 /* ---------------------------------
    Imágenes de recorridos (hover)
 ---------------------------------- */
+#mapanav { 
+  text-align: center;
+}
 #mapanav svg .map-hover-image {
   opacity: 0;
   pointer-events: none;

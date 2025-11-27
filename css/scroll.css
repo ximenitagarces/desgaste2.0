@@ -5,7 +5,7 @@
 
 :root {
     --scroll-background: #d2d2d2;
-    --scroll-foreground: #00000;
+    --scroll-foreground: #000;
     --scroll-background-over: gray;
     --scroll-border-radius: 0px;
     --scroll-size: 10px;
