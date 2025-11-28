@@ -1,6 +1,13 @@
 @import 'scroll.css';
 @import 'map.css';
 
+@font-face {
+  font-family: 'Desgaste';
+  src: url('DesgasteVF.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   box-sizing: border-box;
 }
