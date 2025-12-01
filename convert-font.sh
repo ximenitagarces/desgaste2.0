@@ -1,17 +1,36 @@
 #!/bin/bash
 
-echo "Convirtiendo...";
+echo "Convirtiendo DesgasteVF.ttf a DesgasteVF.woff2...";
 
-# Intentar usar pyftsubset directamente
-if command -v pyftsubset &> /dev/null; then
-    pyftsubset ./fonts/DesgasteVF.ttf --layout-features="*" --flavor="woff2" --output-file="./fonts/DesgasteVF.woff2"
-# Si no está disponible, intentar usar python3 -m fontTools.subset
-elif python3 -m fontTools.subset --help &> /dev/null; then
-    python3 -m fontTools.subset ./fonts/DesgasteVF.ttf --layout-features="*" --flavor="woff2" --output-file="./fonts/DesgasteVF.woff2"
-else
-    echo "Error: pyftsubset no está disponible."
-    echo "Para instalar fonttools, ejecuta uno de estos comandos:"
-    echo "  sudo apt install python3-fonttools"
-    echo "  O: python3 -m pip install --user fonttools --break-system-packages"
-    exit 1
+# Método preferido: usar fontTools.ttLib.woff2 compress (compresión directa sin subset)
+if python3 -c "import fontTools.ttLib.woff2" 2>/dev/null; then
+    python3 -m fontTools.ttLib.woff2 compress ./css/DesgasteVF.ttf -o ./css/DesgasteVF.woff2
+    if [ $? -eq 0 ]; then
+        echo "✓ Conversión exitosa usando fontTools.ttLib.woff2"
+        exit 0
+    fi
 fi
+
+# Método alternativo: usar pyftsubset
+if command -v pyftsubset &> /dev/null; then
+    pyftsubset ./css/DesgasteVF.ttf --layout-features="*" --flavor="woff2" --output-file="./css/DesgasteVF.woff2"
+    if [ $? -eq 0 ]; then
+        echo "✓ Conversión exitosa usando pyftsubset"
+        exit 0
+    fi
+fi
+
+# Método alternativo: usar fontTools.subset
+if python3 -m fontTools.subset --help &> /dev/null 2>&1; then
+    python3 -m fontTools.subset ./css/DesgasteVF.ttf --layout-features="*" --flavor="woff2" --output-file="./css/DesgasteVF.woff2"
+    if [ $? -eq 0 ]; then
+        echo "✓ Conversión exitosa usando fontTools.subset"
+        exit 0
+    fi
+fi
+
+echo "Error: No se pudo convertir la fuente."
+echo "Para instalar fonttools, ejecuta uno de estos comandos:"
+echo "  sudo apt install python3-fonttools"
+echo "  O: python3 -m pip install --user fonttools --break-system-packages"
+exit 1

@@ -47,6 +47,7 @@ html {
   --font-base: 'Neue Montreal', Helvetica, Arial, Lucida, sans-serif;
   --font-light: 'Neue Montreal Light', Helvetica, Arial, Lucida, sans-serif;
   --font-bold: 'Neue Montreal Bold', Helvetica, Arial, Lucida, sans-serif;
+  --font-desgaste: 'Desgaste', Helvetica, Arial, Lucida, sans-serif;
   --color-text: rgb(0, 0, 0);
   --color-bg: #2e4351;
   --color-testimonio-base: #cfcfcf;
@@ -62,6 +63,18 @@ body {
   color: #111;
   min-height: 100vh;
   overflow-y: auto;
+}
+
+.desgaste {
+  font-family: var(--font-desgaste);
+  /* 
+    TIPOGRAFÍA DESGASTE:
+    wght: default: 100 (peso por defecto)
+    max: 900 (peso máximo)
+    min: 100 (peso mínimo)
+    tag: "wght" (etiqueta de la variable)
+  */
+  font-variation-settings: 'wght' 900; /* ← peso (900 es el peso máximo, así se declara en css) */
 }
 
 /* ---------------------------
