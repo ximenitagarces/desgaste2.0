@@ -31,17 +31,37 @@ body {
     letter-spacing: 1px;
     color: inherit;
     position: relative;
+    pointer-events: none;
 }
 .testimonio img {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     max-width: 640px;
     z-index: -1;
     transform: scale(1);
+    pointer-events: all;
+    transition: all 0.3s ease;
 }
 
+.testimonio img:hover {
+    opacity: .5;
+}
+.testimonio img.img-right {
+    transition: all 1s ease;
+    right: 0;
+}
+.testimonio img.img-right:hover {
+    transform: scale(1.5) translateX(100px) scaleY(1.5) translateY(100px);
+}
+
+
+.testimonio img.img-left {
+    left: 0;
+}
+.testimonio img.img-rotated {
+    transform: rotate(90deg);
+}
 .testimonio .word {
     display: inline-block;
     color: inherit;

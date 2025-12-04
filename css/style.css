@@ -121,6 +121,9 @@ body {
   font-size: 30px;
   font-weight: 50;
   padding: 1em;
+  pointer-events: none;
+  position: relative;
+  z-index: 0;
 }
 
 /* ---------------------------
