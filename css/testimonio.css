@@ -30,6 +30,16 @@ body {
     line-height: 1em;
     letter-spacing: 1px;
     color: inherit;
+    position: relative;
+}
+.testimonio img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 640px;
+    z-index: -1;
+    transform: scale(1);
 }
 
 .testimonio .word {

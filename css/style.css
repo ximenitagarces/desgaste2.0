@@ -82,8 +82,7 @@ body {
 --------------------------- */
 .titulo {
   font-size: 80px;    /* ← CAMBIA EL TAMAÑO AQUÍ  (PARALELISMO) */
-  font-weight: 100;    /* ← CAMBIA EL PESO AQUÍ (700, 800, 900…) */
-  margin: 10px 10px 40px;  /* ← controla la posición */
+  margin: 80px 10px 80px;  /* ← controla la posición */
   letter-spacing: -2px;
 }
 
