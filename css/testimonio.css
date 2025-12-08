@@ -48,13 +48,12 @@ body {
     opacity: .5;
 }
 .testimonio img.img-right {
-    transition: all 1s ease;
+
     right: 0;
 }
-.testimonio img.img-right:hover {
-    transform: scale(1.5) translateX(100px) scaleY(1.5) translateY(100px);
+.testimonio img.img-left:hover {
+   left: 50%;
 }
-
 
 .testimonio img.img-left {
     left: 0;
